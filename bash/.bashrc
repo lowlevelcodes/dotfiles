@@ -12,6 +12,10 @@ alias grep='grep --color=auto'
 
 PS1='[\u@\h \W]\$ '
 
+export EDITOR=$(which vim)
+export SYSTEM_EDITOR=$EDITOR
+export VISUAL=$EDITOR
+
 export GPG_TTY=$(tty)
 
 eval "$(starship init bash)"
