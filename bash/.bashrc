@@ -14,3 +14,5 @@ PS1='[\u@\h \W]\$ '
 
 export GPG_TTY=$(tty)
 
+eval "$(starship init bash)"
+
