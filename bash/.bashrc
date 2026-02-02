@@ -18,5 +18,7 @@ export VISUAL=$EDITOR
 
 export GPG_TTY=$(tty)
 
-eval "$(starship init bash)"
+if [ "$TERM" != "linux" ]; then
+    eval "$(starship init bash)"
+fi
 
